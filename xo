@@ -1,0 +1,298 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace xo2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        int cl = 10;
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            boom1.PerformClick();
+        }
+      
+        private void boom1_Click(object sender, EventArgs e)
+        {
+            button10.Text = "";
+            button11.Text = "";
+            button12.Text = "";
+            button13.Text = "";
+            button14.Text = "";
+            button15.Text = "";
+            button16.Text = "";
+            button17.Text = "";
+            button18.Text = "";
+            cl = 10;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (button10.Text=="")
+        {
+               if (cl % 2 ==0)
+                {
+                    button10.ForeColor = Color.Red;
+                    button10.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+               else
+                {
+                    button11.ForeColor = Color.Blue;
+                    button10.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+        }
+}
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (button11.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button11.ForeColor = Color.Red;
+                    button11.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button11.ForeColor = Color.Blue;
+                    button11.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (button12.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button12.ForeColor = Color.Red;
+                    button12.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button12.ForeColor = Color.Blue;
+                    button12.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            if (button13.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button13.ForeColor = Color.Red;
+                    button13.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button13.ForeColor = Color.Blue;
+                    button13.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (button14.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button14.ForeColor = Color.Red;
+                    button14.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button14.ForeColor = Color.Blue;
+                    button14.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            if (button15.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button15.ForeColor = Color.Red;
+                    button15.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button15.ForeColor = Color.Blue;
+                    button15.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (button16.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button16.ForeColor = Color.Red;
+                    button16.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button16.ForeColor = Color.Blue;
+                    button16.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            if (button17.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button17.ForeColor = Color.Red;
+                    button17.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button17.ForeColor = Color.Blue;
+                    button17.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            if (button18.Text == "")
+            {
+                if (cl % 2 == 0)
+                {
+                    button18.ForeColor = Color.Red;
+                    button18.Text = "x";
+                    cl--;
+                    timer1.Start();
+                }
+                else
+                {
+                    button18.ForeColor = Color.Blue;
+                    button18.Text = "O";
+                    cl--;
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(cl < 10)
+            {
+                timer1.Stop();
+                if (button10.Text == "x" && button11.Text == "x" && button12.Text == "x")
+                {
+                    MessageBox.Show("x เป็นผู้ชนะ", "แจ้งเตือน");
+                }
+                else if (button13.Text == "x" && button14.Text == "x" && button15.Text == "x")
+                {
+                    MessageBox.Show("x เป็นผู้ชนะ", "แจ้งเตือน");
+                }
+                else if (button16.Text == "x" && button17.Text == "x" && button18.Text == "x")
+                {
+                    MessageBox.Show("x เป็นผู้ชนะ", "แจ้งเตือน");
+                }
+                else if (button10.Text == "x" && button11.Text =="x" && button12.Text == "x")
+                {
+                    MessageBox.Show("x เป็นผู้ชนะ", "แจ้งเตือน");
+                }
+                else if (button10.Text == "x" && button13.Text == "x" && button16.Text == "x")
+                {
+                    MessageBox.Show("x เป็นผู้ชนะ", "แจ้งเตือน");
+                }
+                else if (button11.Text == "x" && button14.Text == "x" && button17.Text == "x")
+                {
+                    MessageBox.Show("x เป็นผู้ชนะ", "แจ้งเตือน");
+                }
+                else if (button12.Text == "x" && button15.Text == "x" && button18.Text == "x")
+                {
+                    MessageBox.Show("x เป็นผู้ชนะ", "แจ้งเตือน");
+                }
+            }
+            else if (button13.Text == "x" && button14.Text == "x" && button15.Text == "x")
+            {
+                MessageBox.Show("O เป็นผู้ชนะ", "แจ้งเตือน");
+            }
+            else if (button16.Text == "x" && button17.Text == "x" && button18.Text == "x")
+            {
+                MessageBox.Show("O เป็นผู้ชนะ", "แจ้งเตือน");
+            }
+            else if (button10.Text == "x" && button11.Text == "x" && button12.Text == "x")
+            {
+                MessageBox.Show("O เป็นผู้ชนะ", "แจ้งเตือน");
+            }
+            else if (button10.Text == "x" && button13.Text == "x" && button16.Text == "x")
+            {
+                MessageBox.Show("O เป็นผู้ชนะ", "แจ้งเตือน");
+            }
+            else if (button11.Text == "x" && button14.Text == "x" && button17.Text == "x")
+            {
+                MessageBox.Show("O เป็นผู้ชนะ", "แจ้งเตือน");
+            }
+            else if (button12.Text == "x" && button15.Text == "x" && button18.Text == "x")
+            {
+                MessageBox.Show("O เป็นผู้ชนะ", "แจ้งเตือน");
+            }
+
+
+        }
+        
+        private void boom2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("คุุณต้องการออกจากเกมหรือไม่",MessageBoxButtons.YesNo) == DialogResult.Yes
+                {
+                this.Close();
+            }
+        }
+    }
+}
